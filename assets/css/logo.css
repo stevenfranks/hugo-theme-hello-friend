@@ -23,12 +23,12 @@
 
   &__cursor {
     display: inline-block;
-    width: 10px;
+    width: 4px;
     height: 1rem;
-    background: #fe5186;
-    margin-left: 5px;
+    background: #ffffff;
+    margin-left: 10px;
     border-radius: 1px;
-    animation: cursor 1s infinite;
+    animation: cursor 1.5s infinite;
   }
 }
 
