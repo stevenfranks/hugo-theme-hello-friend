@@ -67,7 +67,7 @@ h4 {
 }
 
 a {
-  color: inherit;
+  color: #C3C3CD;
 }
 
 img {
@@ -266,4 +266,8 @@ blockquote.twitter-tweet {
   font-size: inherit;
   line-height: inherit;
   border-radius: 8px;
+}
+
+span {
+  color: #C3C3CD;
 }
