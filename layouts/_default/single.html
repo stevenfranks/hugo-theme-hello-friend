@@ -17,7 +17,7 @@
         {{ end }}
       {{ end }}
 
-      {{ if ne $.File.Path "/about.md" }}
+      {{ if ne $.File.Path "about.md" }}
         {{ with .Params.Author }}
           <span class="post-author"
             >— {{ $.Site.Params.WrittenBy | default "Written by" }} {{ . }}</span
