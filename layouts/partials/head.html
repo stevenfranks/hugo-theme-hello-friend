@@ -8,11 +8,11 @@
   name="keywords"
   content="{{ with .Params.Keywords }}{{ delimit . ", " }}{{ else }}{{ $.Site.Params.Keywords }}{{ end }}"
 />
-<meta name="robots" content="noodp" />
+
 <link rel="canonical" href="{{ .Permalink }}" />
 
 <!-- indexing -->
-{{ with .Params.robotsdisallow }}<meta name="robots" content="noindex, nofollow, noarchive">{{ end }}
+{{ with .Params.robotsdisallow }}<meta name="robots" content="noindex, nofollow, noarchive">{{ else }} <meta name="robots" content="index, follow" /> {{ end }}
 
 <!-- head custom -->
 {{- partial "prepended_head.html" . }}
